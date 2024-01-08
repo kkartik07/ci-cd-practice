@@ -21,7 +21,7 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         echo "$SSH_PRIVATE_KEY" > keyfile
-        chmod 600 keyfile
+        chmod 600 "todo-app.pem"
         mkdir -p ~/.ssh
         cp known_hosts ~/.ssh/known_hosts
         ssh -t -i "todo-app.pem" ubuntu@ec2-54-206-122-215.ap-southeast-2.compute.amazonaws.com "sudo bash ~/deploy.sh"
