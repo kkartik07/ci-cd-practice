@@ -25,3 +25,6 @@ jobs:
         mkdir -p ~/.ssh
         cp known_hosts ~/.ssh/known_hosts
         ssh -t -i keyfile ubuntu@ec2-54-206-122-215.ap-southeast-2.compute.amazonaws.com "sudo bash ~/deploy.sh"
+    
+    - name: Debug Statement
+      run: echo "ssh and deploy successful."
