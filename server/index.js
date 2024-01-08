@@ -17,4 +17,4 @@ app.use("/user", userRouter)
 // DONT MISUSE THIS THANKYOU!!
 mongoose.connect('mongodb+srv://kartikkankurte:rDfzcU77EbiYn69e@cluster0.coe8ypl.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
-app.listen(3000, () => console.log('updated7 Server running on port 3000'));
+app.listen(3000, () => console.log('updated new Server running on port 3000'));
