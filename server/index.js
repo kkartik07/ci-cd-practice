@@ -18,4 +18,4 @@ app.get("/",(req,res)=>res.send('hello from new server'))
 // DONT MISUSE THIS THANKYOU!!
 mongoose.connect('mongodb+srv://kartikkankurte:rDfzcU77EbiYn69e@cluster0.coe8ypl.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
-app.listen(3002, () => console.log('updated 5 new Server running on port 3002'));
+app.listen(3000, () => console.log('updated 5 new Server running on port 3000'));
