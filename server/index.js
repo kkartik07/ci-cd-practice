@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
-app.get("/",(req,res)=>res.send('hello from new server and ci-cd is working now agian 2'))
+app.get("/",(req,res)=>res.send('hello from new server and ci-cd is working'))
 
 
 // Connect to MongoDB
